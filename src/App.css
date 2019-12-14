@@ -1,0 +1,37 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: #282c34;
+}
+
+.App-fixed-picture-div {
+  float: left;
+  width: 50vw;
+}
+
+.App-portrait {
+ width: 50vw;
+}
+
+.App-content-div {
+  float: right;
+  width: 50vw;
+  justify-content: center;
+}
+
+.App-content-div p {
+  padding-bottom: 5vh;
+}
+
+.App-link {
+  color: #09d3ac;
+  margin: 2vh;
+}
