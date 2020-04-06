@@ -18,7 +18,7 @@
 }
 
 .App-portrait {
- width: 50vw;
+ width: 45vw;
 }
 
 .App-content-div {
@@ -29,9 +29,23 @@
 
 .App-content-div p {
   padding-bottom: 5vh;
+  font-size: 2em;
+}
+
+.experience-list {
+  list-style-type: none;
 }
 
 .App-link {
   color: #09d3ac;
+  font-size: 1.5em;
   margin: 2vh;
+}
+
+.App-footer {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 20px;
 }
