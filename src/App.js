@@ -12,7 +12,11 @@ function App() {
         </div>
         <div className="App-content-div">
           <p>SEUNGHUN OH</p>
-          <div className="experience-container"></div>
+          <div className="experience-container">
+            <ul className="experience-list">
+              <li>Wayfair LLC</li>
+            </ul>
+          </div>
         </div>
       </header>
       <footer className="App-footer">
