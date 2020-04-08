@@ -50,8 +50,9 @@ export class App extends React.Component {
   createExperience = (experience, index) => {
     return (
       <li key={index} className="experience">
-        <p className="exp-company">{experience.company}</p>
-        <p className="exp-role">{experience.role}</p>
+        <p className="exp-company">
+          {experience.role} | {experience.company}
+        </p>
         <p className="exp-term">{experience.term}</p>
       </li>
     );
@@ -65,7 +66,7 @@ export class App extends React.Component {
             <img src={profile} className="App-portrait" alt="profile" />
           </div>
           <div className="App-content-div">
-            <p>SEUNGHUN OH</p>
+            <p id="name">SEUNGHUN OH</p>
             <div className="experience-container">
               <p id="experience-title">Experience</p>
               <ul className="experience-list">
