@@ -68,41 +68,41 @@ export class App extends React.Component {
           <div className="App-content-div">
             <p id="name">SEUNGHUN OH</p>
             <div className="experience-container">
-              <p id="experience-title">Experience</p>
+              <p id="experience-title">EXPERIENCE</p>
               <ul className="experience-list">
                 {this.state.experiences.map((exp, idx) => {
                   return this.createExperience(exp, idx);
                 })}
               </ul>
             </div>
+            <div className="App-footer">
+              <a
+                className="App-link"
+                href={resume}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                RESUME
+              </a>
+              <a
+                className="App-link"
+                href="https://github.com/seunghunoh57"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GITHUB
+              </a>
+              <a
+                className="App-link"
+                href="https://linkedin.com/in/seunghunoh"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LINKEDIN
+              </a>
+            </div>
           </div>
         </header>
-        <footer className="App-footer">
-          <a
-            className="App-link"
-            href={resume}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            RESUME
-          </a>
-          <a
-            className="App-link"
-            href="https://github.com/seunghunoh57"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GITHUB
-          </a>
-          <a
-            className="App-link"
-            href="https://linkedin.com/in/seunghunoh"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LINKEDIN
-          </a>
-        </footer>
       </div>
     );
   }
