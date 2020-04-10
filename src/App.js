@@ -116,6 +116,14 @@ export class App extends React.Component {
               >
                 Linkedin
               </a>
+              <a
+                className="App-link"
+                href="mailto:seunghun.oh57@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Email
+              </a>
             </div>
           </div>
         </header>
