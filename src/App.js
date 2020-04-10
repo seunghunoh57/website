@@ -12,36 +12,43 @@ export class App extends React.Component {
           company: "Wayfair LLC",
           role: "Software Engineer",
           term: "May '19 to Sep '19",
+          link: "https://www.wayfair.com",
         },
         {
-          company: "Raytheon Company",
+          company: "Raytheon",
           role: "Software Engineer",
           term: "Aug '18 to Mar '19",
+          link: "https://www.rtx.com/en",
         },
         {
           company: "BU School of Medicine",
           role: "Research Assistant",
           term: "Feb '18 to May '18",
+          link: "https://www.bumc.bu.edu/busm/",
         },
         {
           company: "AlzCare Labs",
           role: "Software Engineer Intern",
           term: "May '17 to Aug '17",
+          link: "https://alz.care/",
         },
         {
           company: "Tallan Inc",
           role: "Software Engineer Intern",
           term: "May '16 to Aug '16",
+          link: "https://www.tallan.com/",
         },
         {
           company: "BU Questrom School of Business",
           role: "Student Employee",
           term: "Sep '15 to Dec '17",
+          link: "http://www.bu.edu/questrom/",
         },
         {
           company: "JEI Learning",
           role: "Tutor & Instructor",
           term: "Jul '15 to Aug '15",
+          link: "https://jeilearning.com/saratoga/index.do",
         },
       ],
     };
@@ -51,7 +58,15 @@ export class App extends React.Component {
     return (
       <li key={index} className="experience">
         <p className="exp-company">
-          {experience.role} | {experience.company}
+          {experience.role} |{" "}
+          <a
+            className="exp-link"
+            href={experience.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {experience.company}
+          </a>
         </p>
         <p className="exp-term">{experience.term}</p>
       </li>
@@ -66,9 +81,9 @@ export class App extends React.Component {
             <img src={profile} className="App-portrait" alt="profile" />
           </div>
           <div className="App-content-div">
-            <p id="name">SEUNGHUN OH</p>
+            <p id="name">Seunghun Oh</p>
             <div className="experience-container">
-              <p id="experience-title">EXPERIENCE</p>
+              <p className="title">EXPERIENCE</p>
               <ul className="experience-list">
                 {this.state.experiences.map((exp, idx) => {
                   return this.createExperience(exp, idx);
@@ -76,13 +91,14 @@ export class App extends React.Component {
               </ul>
             </div>
             <div className="App-footer">
+              <p className="footer-title">CONTACTS</p>
               <a
                 className="App-link"
                 href={resume}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                RESUME
+                Resume
               </a>
               <a
                 className="App-link"
@@ -90,7 +106,7 @@ export class App extends React.Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GITHUB
+                Github
               </a>
               <a
                 className="App-link"
@@ -98,7 +114,7 @@ export class App extends React.Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                LINKEDIN
+                Linkedin
               </a>
             </div>
           </div>
