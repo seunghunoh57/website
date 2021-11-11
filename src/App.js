@@ -2,56 +2,12 @@ import React from "react";
 import "./App.css";
 import profile from "./resources/profile.jpg";
 import resume from "./resources/resume.pdf";
+import experiences from "./resources/experiences.json";
 
 export class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      experiences: [
-        {
-          company: "Wayfair LLC",
-          role: "Software Engineer",
-          term: "May '19 to Sep '19",
-          link: "https://www.wayfair.com",
-        },
-        {
-          company: "Raytheon",
-          role: "Software Engineer",
-          term: "Aug '18 to Mar '19",
-          link: "https://www.rtx.com/en",
-        },
-        {
-          company: "BU School of Medicine",
-          role: "Research Assistant",
-          term: "Feb '18 to May '18",
-          link: "https://www.bumc.bu.edu/busm/",
-        },
-        {
-          company: "AlzCare Labs",
-          role: "Software Engineer Intern",
-          term: "May '17 to Aug '17",
-          link: "https://alz.care/",
-        },
-        {
-          company: "Tallan Inc",
-          role: "Software Engineer Intern",
-          term: "May '16 to Aug '16",
-          link: "https://www.tallan.com/",
-        },
-        {
-          company: "BU Questrom School of Business",
-          role: "Student Employee",
-          term: "Sep '15 to Dec '17",
-          link: "http://www.bu.edu/questrom/",
-        },
-        {
-          company: "JEI Learning",
-          role: "Tutor & Instructor",
-          term: "Jul '15 to Aug '15",
-          link: "https://jeilearning.com/saratoga/index.do",
-        },
-      ],
-    };
+    this.state = {experiences};
   }
 
   createExperience = (experience, index) => {
